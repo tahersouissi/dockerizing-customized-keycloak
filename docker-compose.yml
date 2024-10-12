@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:25.0.0
+    restart: always
+    command: 'start-dev'
+    container_name: keycloak
+    environment:
+      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN-admin}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD-admin}
+    ports:
+      - ${KEYCLOAK_PORT-8080}:8080
+    volumes:
+      - ./keycloak-custome-themes:/opt/keycloak/themes/
+    networks:
+      - keycloak-network
+
+  keycloak-mail:
+    image: mailhog/mailhog
+    container_name: keycloak-mail
+    ports:
+      - ${MAIL_PORT-1025}:1025
+      - ${MAILHOG_PORT-8025}:8025
+    networks:
+      - keycloak-network
+    depends_on:
+      - keycloak
+
+networks:
+  keycloak-network:
+    driver: bridge
+
+volumes:
+  keycloak-volume:
+    driver: local

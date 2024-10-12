@@ -1,0 +1,19 @@
+/* login/resources/css/styles.css */
+.card-pf {
+    border-color: var(--pf-global--palette--purple-600);
+}
+
+#kc-login {
+    background-color: var(--pf-global--palette--purple-600);
+}
+
+#kc-login:hover {
+    background-color: var(--pf-global--palette--purple-700);
+}
+
+
+/* Override global primary color 100 and 200*/
+:root {
+    --pf-global--primary-color--100: var(--pf-global--palette--purple-600);
+    --pf-global--primary-color--200: var(--pf-global--palette--purple-700);
+}
