@@ -51,6 +51,22 @@ define the admin email
 Boom everythin works well
 ![Screenshot from 2024-10-13 00-22-42](https://github.com/user-attachments/assets/2742df87-052c-4d47-bfa3-863ea2793b02)
 
+### Test customized template
+Choose the Realm you want to edit ---> Realm Setting --> Themes 
+![Screenshot from 2024-10-13 00-25-30](https://github.com/user-attachments/assets/2394faaf-f499-47d7-8251-3126c35cf4c0)
+
+This is the Login
+
+
+![Screenshot from 2024-10-13 00-26-07](https://github.com/user-attachments/assets/35750c62-fd5c-4813-9b05-376450e446ba)
+
+This is the register
+![Screenshot from 2024-10-13 00-26-29](https://github.com/user-attachments/assets/0053aaf7-f866-4a1f-849f-d7e4d6363891)
+
+
+
+
+
 
 
 
