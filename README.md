@@ -38,7 +38,3 @@ Now run the project without the "-d" option to see the logs
 ```
 docker-compose up 
 ```
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
